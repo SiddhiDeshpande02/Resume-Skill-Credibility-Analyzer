@@ -4,7 +4,6 @@ Utility functions for text extraction and preprocessing
 import re
 import pdfplumber
 from PIL import Image
-import pytesseract
 from io import BytesIO
 
 
@@ -20,17 +19,6 @@ def extract_text_from_pdf(file):
         return text
     except Exception as e:
         raise Exception(f"Error extracting text from PDF: {str(e)}")
-
-
-def extract_text_from_image(file):
-    """Extract text from image using OCR"""
-    try:
-        image = Image.open(file)
-        text = pytesseract.image_to_string(image)
-        return text
-    except Exception as e:
-        raise Exception(f"Error extracting text from image: {str(e)}")
-
 
 def clean_text(text):
     """Clean and normalize text"""

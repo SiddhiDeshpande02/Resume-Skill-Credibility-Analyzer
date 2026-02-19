@@ -9,8 +9,7 @@ import pandas as pd
 
 # Import custom modules
 from utils import (
-    extract_text_from_pdf, extract_text_from_image, 
-    segment_resume_sections, extract_github_url, validate_file
+    extract_text_from_pdf, segment_resume_sections, extract_github_url, validate_file
 )
 from config import (
     MAX_FILE_SIZE_MB, ALLOWED_IMAGE_EXTENSIONS, 
@@ -221,7 +220,7 @@ def perform_analysis(uploaded_file, github_url=None):
     if file_extension == 'pdf':
         resume_text = extract_text_from_pdf(uploaded_file)
     else:
-        resume_text = extract_text_from_image(uploaded_file)
+        "display that this is not a pdf file"          
     
     progress_bar.progress(20)
     
