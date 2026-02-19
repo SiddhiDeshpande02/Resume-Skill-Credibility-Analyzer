@@ -1,8 +1,8 @@
-# 🎓 Resume Skill Credibility Analyzer
+# Resume Skill Credibility Analyzer
 
 An AI-powered system to detect fake skill inflation in student resumes by comparing claimed skills against demonstrated evidence from projects, experience, and GitHub profiles.
 
-## 🌟 Features
+## Features
 
 - **Smart Skill Extraction**: Uses NLP (spaCy) to dynamically extract skills from resumes
 - **Evidence Analysis**: Analyzes projects, work experience, certifications, and achievements
@@ -15,7 +15,7 @@ An AI-powered system to detect fake skill inflation in student resumes by compar
   - **Student Mode**: Get improvement suggestions and skill gap insights
   - **HR Mode**: Get hiring insights and credibility assessment
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 Resume Upload (PDF/Image)
@@ -37,7 +37,7 @@ Credibility Scoring
 Visualization & Reporting
 ```
 
-## 📁 File Structure
+## File Structure
 
 ```
 resume_skill_analyzer/
@@ -55,7 +55,7 @@ resume_skill_analyzer/
 └── README.md                   # This file
 ```
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 
@@ -110,7 +110,7 @@ resume_skill_analyzer/
    **Windows:**
    Download from: https://github.com/UB-Mannheim/tesseract/wiki
 
-## 🎮 Usage
+## Usage
 
 ### Running the Application
 
@@ -142,7 +142,7 @@ resume_skill_analyzer/
    - Improvement suggestions (Student mode)
 6. **Download Report**: Generate and download a comprehensive PDF report
 
-## 📊 How It Works
+## How It Works
 
 ### 1. Skill Extraction
 - Uses spaCy NLP to extract skills from resume text
@@ -183,20 +183,20 @@ credibility_score = evidence_score / expected_score
 - No practical application
 - No measurable outcomes
 
-## 🎨 UI/UX Features
+## UI/UX Features
 
 - **Clean Modern Design**: White background with dark accents
 - **Color-Coded Results**: 
-  - 🟢 Green: Authentic skills
-  - 🟡 Yellow: Partially supported
-  - 🔴 Red: Likely inflated
+  - Green: Authentic skills
+  - Yellow: Partially supported
+  - Red: Likely inflated
 - **Interactive Charts**: Pie charts, bar graphs, and distribution plots
 - **Expandable Details**: Click to see detailed analysis per skill
 - **Responsive Layout**: Works on desktop and tablet screens
 
-## 🔧 Configuration
+## Configuration
 
-Edit `config.py` to customize:
+Edit `config.py` to customise:
 
 - **File size limits**: `MAX_FILE_SIZE_MB = 5`
 - **Skill categories**: Add or modify skill lists
@@ -204,37 +204,37 @@ Edit `config.py` to customize:
 - **Score thresholds**: Adjust credibility ranges
 - **GitHub settings**: Max repos analyzed
 
-## 📝 Example Output
+## Example Output
 
 ```
 Overall Credibility Score: 72.5%
 Total Skills Analyzed: 8
 
 Skill Breakdown:
-✅ Python (Advanced) - Score: 0.85 - Authentic
+Python (Advanced) - Score: 0.85 - Authentic
    Evidence: Found in 3 projects, GitHub repos, professional experience
    
-⚠️  Deep Learning (Advanced) - Score: 0.45 - Partially Supported
+Deep Learning (Advanced) - Score: 0.45 - Partially Supported
    Evidence: Basic implementations, limited evaluation metrics
    Suggestion: Build more complex models with proper evaluation
    
-❌ React (Expert) - Score: 0.25 - Likely Inflated
+React (Expert) - Score: 0.25 - Likely Inflated
    Evidence: Only keyword mentions, no projects or GitHub evidence
    Suggestion: Create React projects and document implementation
 ```
 
-## 🛡️ Ethics & Safety
+## Ethics & Safety
 
 This system is designed with ethical principles:
 
-- ✅ **Assistive, not punitive**: Helps students improve, doesn't reject them
-- ✅ **Explainable**: Every score comes with clear reasoning
-- ✅ **No labeling**: Doesn't call students "liars"
-- ✅ **Opt-in**: Students choose to use it
-- ✅ **Improvement-focused**: Provides actionable suggestions
-- ✅ **Confidence ranges**: Acknowledges uncertainty
+- **Assistive, not punitive**: Helps students improve, doesn't reject them
+- **Explainable**: Every score comes with clear reasoning
+- **No labeling**: Doesn't call students "liars"
+- **Opt-in**: Students choose to use it
+- **Improvement-focused**: Provides actionable suggestions
+- **Confidence ranges**: Acknowledges uncertainty
 
-## 🔍 Limitations
+## Limitations
 
 - Works best with English resumes
 - Requires clearly structured resume sections
@@ -242,7 +242,7 @@ This system is designed with ethical principles:
 - May not capture all evidence formats
 - Scoring is heuristic-based, not perfect
 
-## 🚧 Future Enhancements
+## Future Enhancements
 
 - [ ] Support for more languages
 - [ ] LinkedIn profile integration
@@ -253,7 +253,7 @@ This system is designed with ethical principles:
 - [ ] Resume improvement recommendations
 - [ ] Skills market demand analysis
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -279,11 +279,11 @@ pip install -r requirements.txt
 - Wait 60 minutes or use without GitHub analysis
 - GitHub API allows 60 requests per hour for unauthenticated users
 
-## 📄 License
+## License
 
 This project is for educational and research purposes.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Areas to improve:
 - Better evidence detection algorithms
@@ -292,10 +292,10 @@ Contributions are welcome! Areas to improve:
 - Additional data sources (LinkedIn, etc.)
 - Multilingual support
 
-## 📧 Contact
+## Contact
 
 For questions or suggestions, please open an issue in the repository.
 
 ---
 
-**Built with ❤️ using Python, Streamlit, spaCy, and modern NLP techniques**
+**Built using Python, Streamlit, spaCy, and modern NLP techniques**
