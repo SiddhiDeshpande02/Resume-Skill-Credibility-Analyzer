@@ -9,13 +9,12 @@ from config import SKILL_CATEGORIES, CLAIM_LEVELS
 class SkillExtractor:
     def __init__(self):
         """Initialize skill extractor with spaCy model"""
-        try:
-            self.nlp = spacy.load("en_core_web_sm")
-        except:
-            # If model not found, download it
-            import subprocess
-            subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
-            self.nlp = spacy.load("en_core_web_sm")
+        self.nlp = spacy.load("en_core_web_sm")
+
+        # Build comprehensive skill list
+        self.all_skills = []
+        for category, skills in SKILL_CATEGORIES.items():
+            self.all_skills.extend(skills)
         
         # Build comprehensive skill list
         self.all_skills = []
