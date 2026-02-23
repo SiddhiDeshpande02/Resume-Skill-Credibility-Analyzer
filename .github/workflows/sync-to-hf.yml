@@ -1,0 +1,25 @@
+name: Sync to Hugging Face Hub
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync-to-hub:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Push to Hugging Face Hub
+        uses: nateraw/huggingface-sync-action@v0.0.5
+        with:
+          hf_token: ${{ secrets.HF_TOKEN }}
+          github_repo_id: 'SiddhiDeshpande02/Resume-Skill-Credibility-Analyzer'
+          huggingface_repo_id: 'Siddhi02/resume-skill-credibility-analyzer'
+          repo_type: 'space'
